@@ -3,11 +3,11 @@ Proyecto Calculadora de Descuentos – Grupo 2
 En este proyecto se desarrolló una calculadora de precios con descuentos, implementando estructura, funcionalidad y estilo visual desde cero.
 
 Primero, se creó el index.html, donde se estructuró el formulario con Bootstrap 5.
-Se usaron contenedores y tarjetas (container, card, row, col-md-6) para organizar los campos: nombre del producto, precio, tipo de cliente y forma de pago.
-También se añadió el botón “Calcular”, identificado con btn_calcular_precio, que activa toda la lógica del programa.
+Se usaron contenedores y tarjetas container, card, row, col-md-6 para organizar los campos: nombre del producto, precio, tipo de cliente y forma de pago.
+También se añadió el botón Calcular, identificado con btn_calcular_precio, que activa toda la lógica del programa.
 
 En el archivo main.js se programó la parte funcional.
-Se validó el ingreso de datos con alertas y se aplicó la lógica if-else para definir descuentos según el tipo de cliente (20 % estudiantes, 10 % adultos, 30 % jubilados).
+Se validó el ingreso de datos con alertas y se aplicó la lógica if-else para definir descuentos según el tipo de cliente, 20 % estudiantes, 10 % adultos, 30 % jubilados.
 Además, se añadió un 5 % adicional cuando el pago es en efectivo.
 Luego se implementó un switch que muestra un mensaje motivacional distinto para cada tipo de cliente, y se calculó el precio final mostrando el resultado en pantalla con etiquetas HTML dinámicas.
 

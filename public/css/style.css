@@ -1,0 +1,25 @@
+/*agregamos un body para el fondo de la calculadora
+se agrego un link de la imagen para sencillez del codigo*/
+
+body {
+  background-image: url('https://i.pinimg.com/originals/e3/3e/00/e33e00cc0ff8ebe582432b6be92245a5.gif');
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.form-control, .form-select {
+  border-radius: 8px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+}
+/* agregamos el hover para el btn calcular*/
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  transform: scale(1.02);
+  transition: 0.2s ease-in-out;
+}

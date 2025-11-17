@@ -14,7 +14,7 @@ btnCalcular.addEventListener('click', function() {
     // alerta para que todos los campos sean llenados antes de ejecutar el calculo
     if(!producto || !precio || !cliente || !pago)
     { alert("Complete los campos."); return; }
-});
+
 // descuento aplicando el IF - ELSE
 let descuento = 0;
     if(cliente === "estudiante"){
@@ -46,3 +46,13 @@ let descuento = 0;
 
     // calculo final
     const precioFinal = precio - (precio * descuento / 100);
+
+    // mostrar resultado
+    txt_resultado.innerHTML = `
+        <strong>Producto:</strong> ${producto}<br>
+        <strong>Precio original:</strong> $${precio.toFixed(2)}<br>
+        <strong>Descuento total:</strong> ${descuento}%<br>
+        <strong>Precio final:</strong> $${precioFinal.toFixed(2)}<br><br>
+        <strong>Mensaje:</strong> ${mensaje}
+    `;
+});

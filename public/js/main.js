@@ -15,3 +15,14 @@ btnCalcular.addEventListener('click', function() {
     if(!producto || !precio || !cliente || !pago)
     { alert("Complete los campos."); return; }
 });
+// descuento aplicando el IF - ELSE
+let descuento = 0;
+    if(cliente === "estudiante"){
+        descuento = 20;
+    }else if(cliente === "adulto"){
+        descuento = 10;
+    }else if(cliente === "jubilado"){
+        descuento = 30;
+    }
+    // si paga en efectivo se le aplica el 5% de descuento adicional
+    descuento += (pago === "efectivo") ? 5 : 0;

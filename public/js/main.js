@@ -26,3 +26,23 @@ let descuento = 0;
     }
     // si paga en efectivo se le aplica el 5% de descuento adicional
     descuento += (pago === "efectivo") ? 5 : 0;
+    
+// SWITCH para el mensaje motivacional
+    let mensaje = "";
+    switch(cliente){
+        case "estudiante":
+            mensaje = "Sigue adelante con tus estudios vas por buen camino";
+            break;
+        case "adulto":
+            mensaje = "Gracias por tu esfuerzo diario.";
+            break;
+        case "jubilado":
+            mensaje = "Disfruta tus beneficios.";
+            break;
+        default:
+            mensaje = "Gracias por su compra.";
+            break;
+    }
+
+    // calculo final
+    const precioFinal = precio - (precio * descuento / 100);
